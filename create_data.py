@@ -26,7 +26,8 @@ while count < 30:
         cv2.imwrite('%s/%s.png' % (path,count), face_resize)
     count += 1
 	
-    cv2.imshow('OpenCV', im)
+    # cv2.imshow('OpenCV', im)
+    cv2.imwrite('output_image.jpg', im)
     key = cv2.waitKey(10)
     if key == 27:
         break

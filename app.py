@@ -2,6 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# @app.route('/parse1')
+# def parse1():
+#     return render_template('parse1.html')  # Assuming you have an HTML template named parse1.html
+
 @app.route('/')
 def index(name=None):
     return render_template('index.html',name=name)
